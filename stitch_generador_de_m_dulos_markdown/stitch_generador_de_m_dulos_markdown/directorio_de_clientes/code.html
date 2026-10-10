@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffb596","tertiary-container":"#bc4800","surface-container-low":"#171b26","primary-fixed-dim":"#b4c5ff","surface-variant":"#313540","surface-container-lowest":"#0a0e18","on-primary-fixed-variant":"#003ea8","on-surface-variant":"#c3c6d7","surface-container-high":"#262a35","on-error-container":"#ffdad6","surface-interactive":"#1F293D","surface-container-highest":"#313540","warning-amber":"#F59E0B","on-background":"#dfe2f1","primary":"#b4c5ff","error-container":"#93000a","on-primary":"#002a78","error":"#ffb4ab","on-secondary-fixed-variant":"#3d475c","inverse-surface":"#dfe2f1","tertiary-fixed-dim":"#ffb596","on-secondary-fixed":"#111b2f","secondary-container":"#3f495f","on-primary-container":"#eeefff","background":"#0f131d","inverse-primary":"#0053db","surface":"#0f131d","on-tertiary-container":"#ffede6","on-secondary":"#263045","on-primary-fixed":"#00174b","surface-card":"#111827","primary-fixed":"#dbe1ff","surface-container":"#1c1f2a","primary-container":"#2563eb","outline-variant":"#434655","surface-dim":"#0f131d","tertiary-fixed":"#ffdbcd","expense-rose":"#F43F5E","surface-bright":"#353944","on-surface":"#dfe2f1","on-tertiary":"#581e00","secondary-fixed":"#d8e2fd","inverse-on-surface":"#2c303b","income-emerald":"#10B981","outline":"#8d90a0","app-bg":"#0B0F19","on-tertiary-fixed-variant":"#7d2d00","on-error":"#690005","on-secondary-container":"#aeb8d2","on-tertiary-fixed":"#360f00","secondary-fixed-dim":"#bcc6e0","secondary":"#bcc6e0","border-subtle":"#1F2937","surface-tint":"#b4c5ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","gutter":"1.25rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2.5rem","space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Inter"],"headline-xl-mobile":["Inter"],"metric-md":["JetBrains Mono"],"metric-xl":["JetBrains Mono"],"body-lg":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"metric-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"]},fontSize:{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"metric-md":["16px",{"lineHeight":"22px","fontWeight":"500"}],"metric-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"metric-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-card border-r border-border-subtle z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-border-subtle flex items-center gap-space-sm"><img alt="Finanzas Pro Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UtKI9QchmNvRDLWr7U7AtrqJLccJXcn8RkWXaiH8ES--z0sxRh1Zb1I4XHV23ZsojwibGlvyo0il9LyYYsrcKYhibG_pGc3awsWMqQj6rNgii5b1CVSyGre3yP-rDFWUYqV5i7ubBQjWTUe_3oFHB8QU618WqRA4-V_RoZFav-0ZJP_m0VixPMsT0Z0D53UgSW6f28b47w4zFcgz6kXEHXCa_rWtBnMpyPX0qiKlQgRcMEbBSY0w4Rfp4"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">Finanzas Pro</span></div><nav class="flex flex-col gap-space-xs p-space-sm mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span>Dashboard</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="transacciones" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span>Transacciones</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="metas-de-ahorro" href="#"><span class="material-symbols-outlined text-lg">savings</span>Metas de Ahorro</a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="directorio-de-clientes" href="#"><span class="material-symbols-outlined text-lg">group</span>Directorio de Clientes</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="ajustes" href="#"><span class="material-symbols-outlined text-lg">settings</span>Ajustes</a></nav></div><div class="p-space-sm border-t border-border-subtle bg-surface-card"><div class="flex items-center justify-between gap-space-xs p-space-xs rounded-lg hover:bg-surface-interactive transition-colors"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEK1qPECfbKVCLguD-p1WKUEpWcgaa7H85-P9-LPkfpOGIh9VRlQxFF7kTr7L6a89O1FxG84PM3bR-XuRfTk3lj98vD8y9sZFv-NRciw6Vcs5nVtmZ9xb3HBGwugWAIG4BR6LYO3HEtxs8CMEcO7dakY7HoUlC2a2MsjO8_kQnJfzNJprUMJ-EQHl06ETe4muKiYaKIusykNtvuoct4w5OWh-D_lKp-n7KrkjcQiG3H95MfahDs23"/><div class="flex flex-col min-w-0"><span class="font-body-md text-body-md text-on-surface truncate font-medium">Paul Inamagua</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Plan Pro / Finanzas Personales</span></div></div><button class="text-on-surface-variant hover:text-expense-rose transition-colors p-space-xs" title="Cerrar sesión" type="button"><span class="material-symbols-outlined text-lg">logout</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-card/80 backdrop-blur-xl border-b border-border-subtle z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-outline">Terminal Financiera</span></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-interactive text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm border border-border-subtle" type="button"><span class="material-symbols-outlined text-sm">search</span><span class="hidden md:inline">Buscar registros...</span></button><div class="flex items-center gap-space-xs"><button class="text-on-surface-variant hover:text-on-surface p-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span></button><button class="text-on-surface-variant hover:text-on-surface p-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-lg">help</span></button></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEK1qPECfbKVCLguD-p1WKUEpWcgaa7H85-P9-LPkfpOGIh9VRlQxFF7kTr7L6a89O1FxG84PM3bR-XuRfTk3lj98vD8y9sZFv-NRciw6Vcs5nVtmZ9xb3HBGwugWAIG4BR6LYO3HEtxs8CMEcO7dakY7HoUlC2a2MsjO8_kQnJfzNJprUMJ-EQHl06ETe4muKiYaKIusykNtvuoct4w5OWh-D_lKp-n7KrkjcQiG3H95MfahDs23"/></div></header><main class="w-full pt-16 min-h-screen bg-app-bg px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Top Stats & Quick Metrics Overview -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-lg">
+<div class="bg-surface-card p-space-md rounded-xl shadow-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Cartera Total</span>
+<span class="font-metric-lg text-metric-lg text-on-surface mt-space-xs font-semibold">$82,100.00</span>
+<span class="font-label-sm text-label-sm text-income-emerald mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +12.4% este mes
+        </span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-interactive flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">account_balance</span>
+</div>
+</div>
+<div class="bg-surface-card p-space-md rounded-xl shadow-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Clientes Activos</span>
+<span class="font-metric-lg text-metric-lg text-on-surface mt-space-xs font-semibold">42 / 45</span>
+<span class="font-label-sm text-label-sm text-income-emerald mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span> 93.3% operatividad
+        </span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-interactive flex items-center justify-center text-income-emerald">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+</div>
+<div class="bg-surface-card p-space-md rounded-xl shadow-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Saldo Promedio</span>
+<span class="font-metric-lg text-metric-lg text-on-surface mt-space-xs font-semibold">$1,824.44</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">tune</span> Por titular activo
+        </span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-interactive flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl">query_stats</span>
+</div>
+</div>
+<div class="bg-surface-card p-space-md rounded-xl shadow-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Inactivos / En Pausa</span>
+<span class="font-metric-lg text-metric-lg text-on-surface mt-space-xs font-semibold">03</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">pause_circle</span> 1 en reactivación
+        </span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-interactive flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-xl">person_off</span>
+</div>
+</div>
+</div>
+<!-- Header Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Directorio de Clientes Financieros</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Gestión y seguimiento de cartera de clientes y cuentas asociadas.</p>
+</div>
+<!-- Controls Row -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Search input -->
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">search</span>
+<input class="w-full bg-surface-interactive text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg pl-9 pr-space-md py-2 transition-all outline-none focus:ring-1 focus:ring-primary-container" id="client-search-input" placeholder="Buscar por nombre, correo o cédula..." type="text"/>
+</div>
+<!-- Filter button -->
+<div class="relative">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-interactive text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors" id="filter-status-btn" type="button">
+<span class="material-symbols-outlined text-base text-outline">filter_list</span>
+<span>Estado: <strong class="font-semibold text-primary" id="selected-filter-label">Todos</strong></span>
+<span class="material-symbols-outlined text-base text-outline">expand_more</span>
+</button>
+<!-- Popover Menu -->
+<div class="hidden absolute right-0 mt-1.5 w-44 bg-surface-interactive shadow-xl rounded-lg p-1 z-20 flex flex-col gap-0.5" id="filter-dropdown">
+<button class="w-full text-left px-3 py-1.5 rounded text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm flex items-center justify-between" onclick="setFilter('Todos')" type="button">
+<span>Todos</span>
+<span class="material-symbols-outlined text-sm text-primary">check</span>
+</button>
+<button class="w-full text-left px-3 py-1.5 rounded text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm" onclick="setFilter('Activo')" type="button">
+            Activos
+          </button>
+<button class="w-full text-left px-3 py-1.5 rounded text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm" onclick="setFilter('Inactivo')" type="button">
+            Inactivos
+          </button>
+</div>
+</div>
+<!-- Primary Action Button -->
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-body-md text-body-md font-semibold hover:brightness-110 active:brightness-95 transition-all shadow-sm" onclick="toggleModal(true)" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Nuevo Cliente</span>
+</button>
+</div>
+</div>
+<!-- Data Table Card Container -->
+<div class="bg-surface-card rounded-xl shadow-xl overflow-hidden flex flex-col">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse" id="clients-table">
+<thead>
+<tr class="bg-surface-container-low text-outline uppercase font-label-sm text-label-sm tracking-wider">
+<th class="py-3 px-space-md font-medium">ID Cliente</th>
+<th class="py-3 px-space-md font-medium">Nombre Completo</th>
+<th class="py-3 px-space-md font-medium">Correo Electrónico</th>
+<th class="py-3 px-space-md font-medium">Teléfono</th>
+<th class="py-3 px-space-md font-medium text-right">Saldo Administrado</th>
+<th class="py-3 px-space-md font-medium text-center">Estado</th>
+<th class="py-3 px-space-md font-medium text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-interactive transition-colors group bg-surface-card">
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-outline">CLI-0101</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-primary/20 flex items-center justify-center text-primary font-semibold text-xs">
+                  SM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors">Sofia Morales</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Inversor Patrimonial</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm text-body-sm">sofia.morales@empresa.com</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface-variant text-xs">+593 99 123 4567</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface font-semibold text-right">$14,250.00</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-income-emerald/15 text-income-emerald">
+<span class="w-1.5 h-1.5 rounded-full bg-income-emerald"></span> Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Editar perfil" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-expense-rose hover:bg-surface-container-high transition-colors" title="Más opciones" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-interactive transition-colors group bg-surface-card">
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-outline">CLI-0102</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-primary/20 flex items-center justify-center text-primary font-semibold text-xs">
+                  CM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors">Carlos Mendoza</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Cuenta Corporativa Pyme</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm text-body-sm">cmendoza@techandina.io</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface-variant text-xs">+593 98 765 4321</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface font-semibold text-right">$8,900.00</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-income-emerald/15 text-income-emerald">
+<span class="w-1.5 h-1.5 rounded-full bg-income-emerald"></span> Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Editar perfil" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-expense-rose hover:bg-surface-container-high transition-colors" title="Más opciones" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-interactive transition-colors group bg-surface-card">
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-outline">CLI-0103</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-primary/20 flex items-center justify-center text-primary font-semibold text-xs">
+                  AB
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors">Andrea Benítez</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Fondo de Retiro VIP</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm text-body-sm">andrea.b@inversiones.ec</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface-variant text-xs">+593 99 555 1290</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface font-semibold text-right">$32,100.00</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-income-emerald/15 text-income-emerald">
+<span class="w-1.5 h-1.5 rounded-full bg-income-emerald"></span> Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Editar perfil" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-expense-rose hover:bg-surface-container-high transition-colors" title="Más opciones" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-interactive transition-colors group bg-surface-card">
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-outline">CLI-0104</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-outline/20 flex items-center justify-center text-outline font-semibold text-xs">
+                  RA
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface/75 group-hover:text-primary transition-colors">Roberto Alvarado</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Cuenta Personal Ahorros</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface-variant/80 font-body-sm text-body-sm">ralvarado@consulting.com</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface-variant/80 text-xs">+593 97 888 4411</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface/80 font-semibold text-right">$1,450.00</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-outline/15 text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Inactivo
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Editar perfil" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-expense-rose hover:bg-surface-container-high transition-colors" title="Más opciones" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-interactive transition-colors group bg-surface-card">
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-outline">CLI-0105</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-primary/20 flex items-center justify-center text-primary font-semibold text-xs">
+                  VE
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors">Valeria Espinosa</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Gestión Fiduciaria</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm text-body-sm">valeria.espinosa@finlaw.com</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface-variant text-xs">+593 99 222 7834</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface font-semibold text-right">$19,800.00</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-income-emerald/15 text-income-emerald">
+<span class="w-1.5 h-1.5 rounded-full bg-income-emerald"></span> Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Editar perfil" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-expense-rose hover:bg-surface-container-high transition-colors" title="Más opciones" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-interactive transition-colors group bg-surface-card">
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-outline">CLI-0106</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-primary/20 flex items-center justify-center text-primary font-semibold text-xs">
+                  GT
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors">Gabriel Torres</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Cuenta Inversión Renta Variable</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm text-body-sm">gtorres@soluciones.ec</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface-variant text-xs">+593 96 333 9901</td>
+<td class="py-3.5 px-space-md font-metric-md text-metric-md text-on-surface font-semibold text-right">$5,600.00</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-income-emerald/15 text-income-emerald">
+<span class="w-1.5 h-1.5 rounded-full bg-income-emerald"></span> Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Editar perfil" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-expense-rose hover:bg-surface-container-high transition-colors" title="Más opciones" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Pagination & Stats Bar -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+        Mostrando <span class="text-on-surface font-medium">1-6</span> de <span class="text-on-surface font-medium">45</span> resultados
+      </span>
+<!-- Pagination controls -->
+<div class="flex items-center gap-1.5">
+<button class="px-space-sm py-1.5 rounded text-outline font-body-sm text-body-sm cursor-not-allowed opacity-50 flex items-center gap-1" disabled="" type="button">
+<span class="material-symbols-outlined text-sm">chevron_left</span> Anterior
+        </button>
+<button class="w-8 h-8 rounded bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold flex items-center justify-center" type="button">
+          1
+        </button>
+<button class="w-8 h-8 rounded text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface font-body-sm text-body-sm flex items-center justify-center transition-colors" type="button">
+          2
+        </button>
+<button class="w-8 h-8 rounded text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface font-body-sm text-body-sm flex items-center justify-center transition-colors" type="button">
+          3
+        </button>
+<button class="px-space-sm py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-interactive font-body-sm text-body-sm flex items-center gap-1 transition-colors" type="button">
+          Siguiente <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Modal / Overlay for Adding Client -->
+<div class="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-space-md" id="new-client-modal">
+<div class="bg-surface-card rounded-xl max-w-lg w-full p-space-lg shadow-2xl relative">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">person_add</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Registrar Nuevo Cliente</h2>
+</div>
+<button class="text-outline hover:text-on-surface transition-colors p-1" onclick="toggleModal(false)" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-sm" id="new-client-form" onsubmit="handleCreateClient(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nombre Completo</label>
+<input class="w-full bg-surface-interactive text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg px-space-sm py-2 outline-none focus:ring-1 focus:ring-primary-container" placeholder="Ej. Mariana Pazmiño" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Correo Electrónico</label>
+<input class="w-full bg-surface-interactive text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg px-space-sm py-2 outline-none focus:ring-1 focus:ring-primary-container" placeholder="marianap@empresa.ec" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Teléfono Móvil</label>
+<input class="w-full bg-surface-interactive text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg px-space-sm py-2 outline-none focus:ring-1 focus:ring-primary-container font-metric-md text-xs" placeholder="+593 99 000 0000" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Saldo Inicial ($)</label>
+<input class="w-full bg-surface-interactive text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg px-space-sm py-2 outline-none focus:ring-1 focus:ring-primary-container font-metric-md text-xs" placeholder="10000.00" required="" step="0.01" type="number"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Perfil de Cuenta</label>
+<select class="w-full bg-surface-interactive text-on-surface font-body-sm text-body-sm rounded-lg px-space-sm py-2 outline-none focus:ring-1 focus:ring-primary-container">
+<option>Inversor Patrimonial</option>
+<option>Cuenta Corporativa Pyme</option>
+<option>Fondo Fiduciario</option>
+<option>Ahorro Personal</option>
+</select>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-md pt-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-interactive text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors" onclick="toggleModal(false)" type="button">
+            Cancelar
+          </button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold hover:brightness-110 transition-all" type="submit">
+            Guardar Cliente
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  function toggleModal(show) {
+    const modal = document.getElementById('new-client-modal');
+    if (show) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
+
+  const filterBtn = document.getElementById('filter-status-btn');
+  const filterDropdown = document.getElementById('filter-dropdown');
+  const filterLabel = document.getElementById('selected-filter-label');
+
+  filterBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    filterDropdown.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', () => {
+    if (!filterDropdown.classList.contains('hidden')) {
+      filterDropdown.classList.add('hidden');
+    }
+  });
+
+  function setFilter(status) {
+    filterLabel.textContent = status;
+    filterDropdown.classList.add('hidden');
+
+    const tableRows = document.querySelectorAll('#clients-table tbody tr');
+    tableRows.forEach(row => {
+      const statusText = row.children[5].innerText.trim();
+      if (status === 'Todos' || statusText.includes(status)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  // Client-side quick filter
+  const searchInput = document.getElementById('client-search-input');
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#clients-table tbody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(query) ? '' : 'none';
+    });
+  });
+
+  function handleCreateClient(event) {
+    event.preventDefault();
+    toggleModal(false);
+  }
+</script></main></div></body></html>

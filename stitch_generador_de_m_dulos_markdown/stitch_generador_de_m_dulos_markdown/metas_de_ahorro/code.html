@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffb596","tertiary-container":"#bc4800","surface-container-low":"#171b26","primary-fixed-dim":"#b4c5ff","surface-variant":"#313540","surface-container-lowest":"#0a0e18","on-primary-fixed-variant":"#003ea8","on-surface-variant":"#c3c6d7","surface-container-high":"#262a35","on-error-container":"#ffdad6","surface-interactive":"#1F293D","surface-container-highest":"#313540","warning-amber":"#F59E0B","on-background":"#dfe2f1","primary":"#b4c5ff","error-container":"#93000a","on-primary":"#002a78","error":"#ffb4ab","on-secondary-fixed-variant":"#3d475c","inverse-surface":"#dfe2f1","tertiary-fixed-dim":"#ffb596","on-secondary-fixed":"#111b2f","secondary-container":"#3f495f","on-primary-container":"#eeefff","background":"#0f131d","inverse-primary":"#0053db","surface":"#0f131d","on-tertiary-container":"#ffede6","on-secondary":"#263045","on-primary-fixed":"#00174b","surface-card":"#111827","primary-fixed":"#dbe1ff","surface-container":"#1c1f2a","primary-container":"#2563eb","outline-variant":"#434655","surface-dim":"#0f131d","tertiary-fixed":"#ffdbcd","expense-rose":"#F43F5E","surface-bright":"#353944","on-surface":"#dfe2f1","on-tertiary":"#581e00","secondary-fixed":"#d8e2fd","inverse-on-surface":"#2c303b","income-emerald":"#10B981","outline":"#8d90a0","app-bg":"#0B0F19","on-tertiary-fixed-variant":"#7d2d00","on-error":"#690005","on-secondary-container":"#aeb8d2","on-tertiary-fixed":"#360f00","secondary-fixed-dim":"#bcc6e0","secondary":"#bcc6e0","border-subtle":"#1F2937","surface-tint":"#b4c5ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","gutter":"1.25rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2.5rem","space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Inter"],"headline-xl-mobile":["Inter"],"metric-md":["JetBrains Mono"],"metric-xl":["JetBrains Mono"],"body-lg":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"metric-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"]},fontSize:{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"metric-md":["16px",{"lineHeight":"22px","fontWeight":"500"}],"metric-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"metric-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-card border-r border-border-subtle z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-border-subtle flex items-center gap-space-sm"><img alt="Finanzas Pro Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UtKI9QchmNvRDLWr7U7AtrqJLccJXcn8RkWXaiH8ES--z0sxRh1Zb1I4XHV23ZsojwibGlvyo0il9LyYYsrcKYhibG_pGc3awsWMqQj6rNgii5b1CVSyGre3yP-rDFWUYqV5i7ubBQjWTUe_3oFHB8QU618WqRA4-V_RoZFav-0ZJP_m0VixPMsT0Z0D53UgSW6f28b47w4zFcgz6kXEHXCa_rWtBnMpyPX0qiKlQgRcMEbBSY0w4Rfp4"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">Finanzas Pro</span></div><nav class="flex flex-col gap-space-xs p-space-sm mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span>Dashboard</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="transacciones" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span>Transacciones</a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="metas-de-ahorro" href="#"><span class="material-symbols-outlined text-lg">savings</span>Metas de Ahorro</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="directorio-de-clientes" href="#"><span class="material-symbols-outlined text-lg">group</span>Directorio de Clientes</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="ajustes" href="#"><span class="material-symbols-outlined text-lg">settings</span>Ajustes</a></nav></div><div class="p-space-sm border-t border-border-subtle bg-surface-card"><div class="flex items-center justify-between gap-space-xs p-space-xs rounded-lg hover:bg-surface-interactive transition-colors"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEK1qPECfbKVCLguD-p1WKUEpWcgaa7H85-P9-LPkfpOGIh9VRlQxFF7kTr7L6a89O1FxG84PM3bR-XuRfTk3lj98vD8y9sZFv-NRciw6Vcs5nVtmZ9xb3HBGwugWAIG4BR6LYO3HEtxs8CMEcO7dakY7HoUlC2a2MsjO8_kQnJfzNJprUMJ-EQHl06ETe4muKiYaKIusykNtvuoct4w5OWh-D_lKp-n7KrkjcQiG3H95MfahDs23"/><div class="flex flex-col min-w-0"><span class="font-body-md text-body-md text-on-surface truncate font-medium">Paul Inamagua</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Plan Pro / Finanzas Personales</span></div></div><button class="text-on-surface-variant hover:text-expense-rose transition-colors p-space-xs" title="Cerrar sesión" type="button"><span class="material-symbols-outlined text-lg">logout</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-card/80 backdrop-blur-xl border-b border-border-subtle z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-outline">Terminal Financiera</span></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-interactive text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm border border-border-subtle" type="button"><span class="material-symbols-outlined text-sm">search</span><span class="hidden md:inline">Buscar registros...</span></button><div class="flex items-center gap-space-xs"><button class="text-on-surface-variant hover:text-on-surface p-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span></button><button class="text-on-surface-variant hover:text-on-surface p-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-lg">help</span></button></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEK1qPECfbKVCLguD-p1WKUEpWcgaa7H85-P9-LPkfpOGIh9VRlQxFF7kTr7L6a89O1FxG84PM3bR-XuRfTk3lj98vD8y9sZFv-NRciw6Vcs5nVtmZ9xb3HBGwugWAIG4BR6LYO3HEtxs8CMEcO7dakY7HoUlC2a2MsjO8_kQnJfzNJprUMJ-EQHl06ETe4muKiYaKIusykNtvuoct4w5OWh-D_lKp-n7KrkjcQiG3H95MfahDs23"/></div></header><main class="w-full pt-16 min-h-screen bg-app-bg px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Top Section: Header & Action -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-income-emerald animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Fondos Activos</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Metas de Ahorro y Presupuesto</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Establece objetivos de capital y realiza aportes directos a tus fondos.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container hover:bg-blue-600 transition-colors font-body-md text-body-md font-medium shadow-sm" id="open-new-goal" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Crear Nueva Meta</span>
+</button>
+</div>
+</div>
+<!-- Summary Metric Bar -->
+<div class="bg-surface-card rounded-xl p-space-lg mb-space-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-80 h-32 bg-gradient-to-l from-primary/5 via-income-emerald/5 to-transparent pointer-events-none"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center relative z-10">
+<!-- Total Ahorrado -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-income-emerald">account_balance_wallet</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Total Ahorrado</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-income-emerald tracking-tight">$8,300.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">USD</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-income-emerald">trending_up</span>
+          +14.8% respecto al mes anterior
+        </span>
+</div>
+<!-- Meta Global -->
+<div class="flex flex-col gap-space-xs md:pl-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">flag</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Meta Global</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface tracking-tight">$12,000.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">USD</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Diferencia restante: <span class="font-metric-md text-metric-md text-on-surface">$3,700.00</span>
+</span>
+</div>
+<!-- Progreso General -->
+<div class="flex flex-col gap-space-sm md:pl-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">pie_chart</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Progreso General</span>
+</div>
+<span class="font-metric-md text-metric-md text-income-emerald">69.1%</span>
+</div>
+<!-- Sleek Bar with Gradient -->
+<div class="w-full h-3 rounded-full bg-surface-container-high overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-container to-income-emerald transition-all duration-700 ease-out" style="width: 69.1%;"></div>
+</div>
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span>3 objetivos activos</span>
+<span>Ritmo proyectado: Óptimo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Goals Section Header -->
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Fondos en Curso</h2>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-interactive text-on-surface font-metric-md text-body-sm">03</span>
+</div>
+<!-- Visual Filter Badges -->
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded-lg bg-surface-interactive text-on-surface font-label-md text-label-md">Todos</button>
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-interactive text-on-surface-variant font-label-md text-label-md transition-colors">A Corto Plazo</button>
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-interactive text-on-surface-variant font-label-md text-label-md transition-colors">Estratégicos</button>
+</div>
+</div>
+<!-- Goals Grid (3 columns) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Card 1: Fondo de Emergencia -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between hover:bg-surface-container/60 transition-colors group">
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-space-xs mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-interactive flex items-center justify-center text-primary-container group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight font-semibold">Fondo de Emergencia</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Respaldo de Liquidez</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-interactive text-on-surface-variant font-label-sm text-label-sm shrink-0">
+            Vence: Dic 2026
+          </span>
+</div>
+<!-- Metric Section -->
+<div class="mb-space-md">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Acumulado</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary-fixed-dim font-metric-md text-label-sm font-semibold">
+              75%
+            </span>
+</div>
+<div class="font-metric-lg text-metric-lg text-on-surface tracking-tight">
+            $7,500.00 <span class="text-on-surface-variant font-metric-md text-metric-md font-normal">de $10,000.00</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-interactive overflow-hidden mb-space-md">
+<div class="h-full rounded-full bg-primary-container transition-all duration-500" style="width: 75%;"></div>
+</div>
+<!-- Inline Visual Mini Sparkline -->
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rendimiento Estimado</span>
+<span class="font-metric-md text-metric-md text-income-emerald">+4.2% APY</span>
+</div>
+<svg class="w-20 h-7 text-primary-fixed-dim" fill="none" viewbox="0 0 80 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 24 L18 18 L34 20 L50 10 L66 12 L78 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2 24 L18 18 L34 20 L50 10 L66 12 L78 3 V28 H2 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+<!-- Notes -->
+<div class="flex items-center gap-space-xs text-on-surface-variant mb-space-lg">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<p class="font-body-sm text-body-sm">3 meses de gastos esenciales cubiertos</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-2.5 rounded-lg bg-surface-interactive hover:bg-surface-container-highest text-on-surface font-body-md text-body-md font-medium transition-colors flex items-center justify-center gap-space-xs" onclick="openAporteModal('Fondo de Emergencia', 7500, 10000)" type="button">
+<span class="material-symbols-outlined text-base">payments</span>
+<span>+ Aportar Capital</span>
+</button>
+</div>
+<!-- Card 2: Vacaciones en Europa -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between hover:bg-surface-container/60 transition-colors group">
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-space-xs mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-interactive flex items-center justify-center text-warning-amber group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">flight_takeoff</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight font-semibold">Vacaciones en Europa</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Viajes & Experiencias</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-interactive text-on-surface-variant font-label-sm text-label-sm shrink-0">
+            Vence: Jul 2025
+          </span>
+</div>
+<!-- Metric Section -->
+<div class="mb-space-md">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Acumulado</span>
+<span class="px-space-xs py-0.5 rounded-full bg-warning-amber/20 text-warning-amber font-metric-md text-label-sm font-semibold">
+              40%
+            </span>
+</div>
+<div class="font-metric-lg text-metric-lg text-on-surface tracking-tight">
+            $800.00 <span class="text-on-surface-variant font-metric-md text-metric-md font-normal">de $2,000.00</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-interactive overflow-hidden mb-space-md">
+<div class="h-full rounded-full bg-warning-amber transition-all duration-500" style="width: 40%;"></div>
+</div>
+<!-- Inline Visual Mini Sparkline -->
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aporte Mensual</span>
+<span class="font-metric-md text-metric-md text-on-surface">$200.00 / mes</span>
+</div>
+<svg class="w-20 h-7 text-warning-amber" fill="none" viewbox="0 0 80 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 22 L20 19 L38 21 L54 13 L68 15 L78 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2 22 L20 19 L38 21 L54 13 L68 15 L78 6 V28 H2 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+<!-- Notes -->
+<div class="flex items-center gap-space-xs text-on-surface-variant mb-space-lg">
+<span class="material-symbols-outlined text-sm text-warning-amber">info</span>
+<p class="font-body-sm text-body-sm">Pasajes y hospedaje previsto</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-2.5 rounded-lg bg-surface-interactive hover:bg-surface-container-highest text-on-surface font-body-md text-body-md font-medium transition-colors flex items-center justify-center gap-space-xs" onclick="openAporteModal('Vacaciones en Europa', 800, 2000)" type="button">
+<span class="material-symbols-outlined text-base">payments</span>
+<span>+ Aportar Capital</span>
+</button>
+</div>
+<!-- Card 3: Renovación Vehículo -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between hover:bg-surface-container/60 transition-colors group">
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-space-xs mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-interactive flex items-center justify-center text-income-emerald group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight font-semibold">Renovación Vehículo</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Activo Personal</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-interactive text-on-surface-variant font-label-sm text-label-sm shrink-0">
+            Vence: Nov 2025
+          </span>
+</div>
+<!-- Metric Section -->
+<div class="mb-space-md">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Acumulado</span>
+<span class="px-space-xs py-0.5 rounded-full bg-income-emerald/20 text-income-emerald font-metric-md text-label-sm font-semibold">
+              70%
+            </span>
+</div>
+<div class="font-metric-lg text-metric-lg text-on-surface tracking-tight">
+            $4,200.00 <span class="text-on-surface-variant font-metric-md text-metric-md font-normal">de $6,000.00</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-interactive overflow-hidden mb-space-md">
+<div class="h-full rounded-full bg-income-emerald transition-all duration-500" style="width: 70%;"></div>
+</div>
+<!-- Inline Visual Mini Sparkline -->
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Último Aporte</span>
+<span class="font-metric-md text-metric-md text-on-surface">+$450.00 hace 4d</span>
+</div>
+<svg class="w-20 h-7 text-income-emerald" fill="none" viewbox="0 0 80 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 20 L22 17 L36 15 L52 11 L66 7 L78 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2 20 L22 17 L36 15 L52 11 L66 7 L78 2 V28 H2 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+<!-- Notes -->
+<div class="flex items-center gap-space-xs text-on-surface-variant mb-space-lg">
+<span class="material-symbols-outlined text-sm text-income-emerald">verified</span>
+<p class="font-body-sm text-body-sm">Cuota inicial y seguro anual</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-2.5 rounded-lg bg-surface-interactive hover:bg-surface-container-highest text-on-surface font-body-md text-body-md font-medium transition-colors flex items-center justify-center gap-space-xs" onclick="openAporteModal('Renovación Vehículo', 4200, 6000)" type="button">
+<span class="material-symbols-outlined text-base">payments</span>
+<span>+ Aportar Capital</span>
+</button>
+</div>
+</div>
+<!-- Bottom Analytics / Visual Distribution Module -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Visual Allocation Bar -->
+<div class="lg:col-span-2 bg-surface-card rounded-xl p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Distribución de Fondos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Balance proporcional del capital asignado a metas activas</p>
+</div>
+<span class="font-metric-md text-metric-md text-income-emerald">$8,300.00 Total</span>
+</div>
+<!-- Segmented Bar -->
+<div class="w-full h-4 rounded-lg bg-surface-interactive flex overflow-hidden mb-space-md">
+<div class="h-full bg-primary-container hover:opacity-90 transition-opacity" style="width: 60%;" title="Fondo de Emergencia (60%)"></div>
+<div class="h-full bg-warning-amber hover:opacity-90 transition-opacity" style="width: 10%;" title="Vacaciones en Europa (10%)"></div>
+<div class="h-full bg-income-emerald hover:opacity-90 transition-opacity" style="width: 30%;" title="Renovación Vehículo (30%)"></div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Emergencia</span>
+<span class="font-metric-md text-metric-md text-on-surface">60%</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-warning-amber"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vacaciones</span>
+<span class="font-metric-md text-metric-md text-on-surface">10%</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-income-emerald"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vehículo</span>
+<span class="font-metric-md text-metric-md text-on-surface">30%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Smart Suggestion Card -->
+<div class="bg-surface-card rounded-xl p-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Consejo Pro</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-semibold">Acelera tus Metas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Con una retención mensual automatizada de <span class="text-on-surface font-metric-md">$310.00</span> alcanzarás tu fondo de vacaciones 45 días antes de la fecha límite.
+        </p>
+</div>
+<button class="mt-space-md py-2 px-space-md rounded-lg bg-surface-interactive hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-medium transition-colors self-start flex items-center gap-1" type="button">
+<span>Automatizar depósito</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Modal Interactivo: Aportar Capital -->
+<div class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-space-md" id="modal-aporte">
+<div class="bg-surface-card w-full max-w-md rounded-xl p-space-lg shadow-2xl relative">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-interactive flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-lg">add_card</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="modal-goal-title">Aportar Capital</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Transferencia directa a cuenta de ahorro</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-interactive transition-colors" onclick="closeAporteModal()" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Progreso Actual</span>
+<span class="font-metric-md text-on-surface" id="modal-progress-text"></span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-interactive overflow-hidden">
+<div class="h-full bg-income-emerald transition-all duration-300" id="modal-progress-bar" style="width: 50%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="aporte-amount">Monto a Aportar (USD)</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-metric-md text-metric-md text-on-surface-variant">$</span>
+<input class="w-full bg-surface-interactive rounded-lg pl-8 pr-4 py-2.5 font-metric-lg text-metric-lg text-on-surface focus:outline-none focus:bg-surface-container-highest transition-colors" id="aporte-amount" placeholder="0.00" step="10" type="number" value="150.00"/>
+</div>
+<div class="flex gap-space-xs mt-1">
+<button class="flex-1 py-1 rounded bg-surface-interactive hover:bg-surface-container-highest font-metric-md text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" onclick="setQuickAmount(50)" type="button">+$50</button>
+<button class="flex-1 py-1 rounded bg-surface-interactive hover:bg-surface-container-highest font-metric-md text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" onclick="setQuickAmount(100)" type="button">+$100</button>
+<button class="flex-1 py-1 rounded bg-surface-interactive hover:bg-surface-container-highest font-metric-md text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" onclick="setQuickAmount(250)" type="button">+$250</button>
+<button class="flex-1 py-1 rounded bg-surface-interactive hover:bg-surface-container-highest font-metric-md text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" onclick="setQuickAmount(500)" type="button">+$500</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="w-1/2 py-2.5 rounded-lg bg-surface-interactive text-on-surface font-body-md text-body-md hover:bg-surface-container-highest transition-colors" onclick="closeAporteModal()" type="button">
+          Cancelar
+        </button>
+<button class="w-1/2 py-2.5 rounded-lg bg-primary-container text-on-primary-container font-body-md text-body-md font-medium hover:bg-blue-600 transition-colors shadow-sm" onclick="confirmAporte()" type="button">
+          Confirmar Aporte
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="fixed bottom-6 right-6 bg-surface-card rounded-lg p-space-md shadow-2xl flex items-center gap-space-sm transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toast-success">
+<div class="w-7 h-7 rounded-full bg-income-emerald/20 text-income-emerald flex items-center justify-center">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Aporte Registrado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">El balance de la meta se ha actualizado con éxito.</span>
+</div>
+</div>
+</div>
+<script>
+  let currentTargetGoal = '';
+  let currentTargetTotal = 1000;
+  let currentTargetCurrent = 500;
+
+  function openAporteModal(goalName, currentVal, targetVal) {
+    currentTargetGoal = goalName;
+    currentTargetCurrent = currentVal;
+    currentTargetTotal = targetVal;
+
+    document.getElementById('modal-goal-title').innerText = goalName;
+    const pct = Math.round((currentVal / targetVal) * 100);
+    document.getElementById('modal-progress-text').innerText = `$${currentVal.toLocaleString()} de $${targetVal.toLocaleString()} (${pct}%)`;
+    document.getElementById('modal-progress-bar').style.width = `${pct}%`;
+
+    const modal = document.getElementById('modal-aporte');
+    modal.classList.remove('hidden');
+  }
+
+  function closeAporteModal() {
+    const modal = document.getElementById('modal-aporte');
+    modal.classList.add('hidden');
+  }
+
+  function setQuickAmount(val) {
+    const input = document.getElementById('aporte-amount');
+    const curr = parseFloat(input.value) || 0;
+    input.value = (curr + val).toFixed(2);
+  }
+
+  function confirmAporte() {
+    closeAporteModal();
+    const toast = document.getElementById('toast-success');
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 3500);
+  }
+
+  document.getElementById('open-new-goal')?.addEventListener('click', () => {
+    openAporteModal('Nueva Meta de Capital', 0, 5000);
+  });
+</script></main></div></body></html>

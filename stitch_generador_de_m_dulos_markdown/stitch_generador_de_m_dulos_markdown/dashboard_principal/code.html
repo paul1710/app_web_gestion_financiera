@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffb596","tertiary-container":"#bc4800","surface-container-low":"#171b26","primary-fixed-dim":"#b4c5ff","surface-variant":"#313540","surface-container-lowest":"#0a0e18","on-primary-fixed-variant":"#003ea8","on-surface-variant":"#c3c6d7","surface-container-high":"#262a35","on-error-container":"#ffdad6","surface-interactive":"#1F293D","surface-container-highest":"#313540","warning-amber":"#F59E0B","on-background":"#dfe2f1","primary":"#b4c5ff","error-container":"#93000a","on-primary":"#002a78","error":"#ffb4ab","on-secondary-fixed-variant":"#3d475c","inverse-surface":"#dfe2f1","tertiary-fixed-dim":"#ffb596","on-secondary-fixed":"#111b2f","secondary-container":"#3f495f","on-primary-container":"#eeefff","background":"#0f131d","inverse-primary":"#0053db","surface":"#0f131d","on-tertiary-container":"#ffede6","on-secondary":"#263045","on-primary-fixed":"#00174b","surface-card":"#111827","primary-fixed":"#dbe1ff","surface-container":"#1c1f2a","primary-container":"#2563eb","outline-variant":"#434655","surface-dim":"#0f131d","tertiary-fixed":"#ffdbcd","expense-rose":"#F43F5E","surface-bright":"#353944","on-surface":"#dfe2f1","on-tertiary":"#581e00","secondary-fixed":"#d8e2fd","inverse-on-surface":"#2c303b","income-emerald":"#10B981","outline":"#8d90a0","app-bg":"#0B0F19","on-tertiary-fixed-variant":"#7d2d00","on-error":"#690005","on-secondary-container":"#aeb8d2","on-tertiary-fixed":"#360f00","secondary-fixed-dim":"#bcc6e0","secondary":"#bcc6e0","border-subtle":"#1F2937","surface-tint":"#b4c5ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","gutter":"1.25rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2.5rem","space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Inter"],"headline-xl-mobile":["Inter"],"metric-md":["JetBrains Mono"],"metric-xl":["JetBrains Mono"],"body-lg":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"metric-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"]},fontSize:{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"metric-md":["16px",{"lineHeight":"22px","fontWeight":"500"}],"metric-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"metric-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}]}}}};</script></head><body class="bg-app-bg text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-card border-r border-border-subtle z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-border-subtle flex items-center gap-space-sm"><img alt="Finanzas Pro Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UtKI9QchmNvRDLWr7U7AtrqJLccJXcn8RkWXaiH8ES--z0sxRh1Zb1I4XHV23ZsojwibGlvyo0il9LyYYsrcKYhibG_pGc3awsWMqQj6rNgii5b1CVSyGre3yP-rDFWUYqV5i7ubBQjWTUe_3oFHB8QU618WqRA4-V_RoZFav-0ZJP_m0VixPMsT0Z0D53UgSW6f28b47w4zFcgz6kXEHXCa_rWtBnMpyPX0qiKlQgRcMEbBSY0w4Rfp4"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">Finanzas Pro</span></div><nav class="flex flex-col gap-space-xs p-space-sm mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span>Dashboard</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="transacciones" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span>Transacciones</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="metas-de-ahorro" href="#"><span class="material-symbols-outlined text-lg">savings</span>Metas de Ahorro</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="directorio-de-clientes" href="#"><span class="material-symbols-outlined text-lg">group</span>Directorio de Clientes</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-interactive hover:text-on-surface transition-colors" data-path="ajustes" href="#"><span class="material-symbols-outlined text-lg">settings</span>Ajustes</a></nav></div><div class="p-space-sm border-t border-border-subtle bg-surface-card"><div class="flex items-center justify-between gap-space-xs p-space-xs rounded-lg hover:bg-surface-interactive transition-colors"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEK1qPECfbKVCLguD-p1WKUEpWcgaa7H85-P9-LPkfpOGIh9VRlQxFF7kTr7L6a89O1FxG84PM3bR-XuRfTk3lj98vD8y9sZFv-NRciw6Vcs5nVtmZ9xb3HBGwugWAIG4BR6LYO3HEtxs8CMEcO7dakY7HoUlC2a2MsjO8_kQnJfzNJprUMJ-EQHl06ETe4muKiYaKIusykNtvuoct4w5OWh-D_lKp-n7KrkjcQiG3H95MfahDs23"/><div class="flex flex-col min-w-0"><span class="font-body-md text-body-md text-on-surface truncate font-medium">Paul Inamagua</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Plan Pro / Finanzas Personales</span></div></div><button class="text-on-surface-variant hover:text-expense-rose transition-colors p-space-xs" title="Cerrar sesión" type="button"><span class="material-symbols-outlined text-lg">logout</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-card/80 backdrop-blur-xl border-b border-border-subtle z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-outline">Terminal Financiera</span></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-interactive text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm border border-border-subtle" type="button"><span class="material-symbols-outlined text-sm">search</span><span class="hidden md:inline">Buscar registros...</span></button><div class="flex items-center gap-space-xs"><button class="text-on-surface-variant hover:text-on-surface p-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span></button><button class="text-on-surface-variant hover:text-on-surface p-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-lg">help</span></button></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEK1qPECfbKVCLguD-p1WKUEpWcgaa7H85-P9-LPkfpOGIh9VRlQxFF7kTr7L6a89O1FxG84PM3bR-XuRfTk3lj98vD8y9sZFv-NRciw6Vcs5nVtmZ9xb3HBGwugWAIG4BR6LYO3HEtxs8CMEcO7dakY7HoUlC2a2MsjO8_kQnJfzNJprUMJ-EQHl06ETe4muKiYaKIusykNtvuoct4w5OWh-D_lKp-n7KrkjcQiG3H95MfahDs23"/></div></header><main class="w-full pt-16 min-h-screen bg-app-bg px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Content Header Area -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span>Resumen General</span>
+<span>/</span>
+<span class="text-primary font-semibold">Octubre 2024</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Resumen Financiero</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Monitorea tus ingresos, egresos y liquidez del mes con trazabilidad en tiempo real.</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-xl bg-surface-interactive text-on-surface text-label-md font-label-md">
+<span class="w-2 h-2 rounded-full bg-income-emerald animate-pulse"></span>
+<span class="font-metric-md text-label-md">USD ($)</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container hover:bg-inverse-primary transition-colors font-body-sm text-body-sm font-semibold shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>+ Registrar Transacción</span>
+</button>
+</div>
+</div>
+<!-- Row 1: KPI Metric Cards (3 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-lg">
+<!-- KPI 1: Ingresos -->
+<div class="bg-surface-card rounded-xl p-space-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 rounded-lg bg-income-emerald/10 text-income-emerald">
+<span class="material-symbols-outlined text-lg">arrow_downward_alt</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Ingresos del Mes</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-1.5 py-0.5 rounded bg-surface-interactive">Mensual</span>
+</div>
+<div class="my-space-xs">
+<div class="font-metric-xl text-metric-xl text-income-emerald tracking-tight">$3,450.00</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-income-emerald/15 text-income-emerald font-metric-md text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+12.4% vs mes anterior</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Meta: $3,000</span>
+</div>
+</div>
+<!-- KPI 2: Egresos -->
+<div class="bg-surface-card rounded-xl p-space-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 rounded-lg bg-expense-rose/10 text-expense-rose">
+<span class="material-symbols-outlined text-lg">arrow_upward_alt</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Egresos del Mes</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-1.5 py-0.5 rounded bg-surface-interactive">Controlado</span>
+</div>
+<div class="my-space-xs">
+<div class="font-metric-xl text-metric-xl text-expense-rose tracking-tight">$1,210.50</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-expense-rose/15 text-expense-rose font-metric-md text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm">trending_down</span>
+<span>-4.1% vs mes anterior</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Límite: $1,500</span>
+</div>
+</div>
+<!-- KPI 3: Saldo Disponible -->
+<div class="bg-surface-card rounded-xl p-space-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="p-1.5 rounded-lg bg-primary-container/15 text-primary">
+<span class="material-symbols-outlined text-lg">account_balance_wallet</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Saldo Disponible</span>
+</div>
+<span class="font-label-sm text-label-sm text-income-emerald px-1.5 py-0.5 rounded bg-income-emerald/10 font-semibold">Saludable</span>
+</div>
+<div class="my-space-xs">
+<div class="font-metric-xl text-metric-xl text-on-surface tracking-tight font-bold">$2,239.50</div>
+</div>
+<div class="pt-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm mb-1.5">
+<span class="text-on-surface-variant">Capacidad de ahorro</span>
+<span class="font-metric-md text-label-sm text-primary font-semibold">64%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-interactive rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 2: Charts & Savings Goals (60% / 40%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left Card: Monthly Cash Flow (7 of 12 cols ~= 60%) -->
+<div class="lg:col-span-7 bg-surface-card rounded-xl p-space-lg flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Flujo de Caja Mensual</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparativa semestral de entradas y salidas operativas</p>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-income-emerald"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ingresos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-expense-rose"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Egresos</span>
+</div>
+</div>
+</div>
+<!-- High fidelity SVG Bar Chart -->
+<div class="w-full h-64 relative flex items-end">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 540 220">
+<!-- Background Grid lines -->
+<line stroke="#1F2937" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="540" y1="20" y2="20"></line>
+<line stroke="#1F2937" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="540" y1="70" y2="70"></line>
+<line stroke="#1F2937" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="540" y1="120" y2="120"></line>
+<line stroke="#1F2937" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="540" y1="170" y2="170"></line>
+<line stroke="#1F2937" stroke-width="1" x1="0" x2="540" y1="195" y2="195"></line>
+<!-- May: Income 2600, Expense 1400 -->
+<rect class="transition-all hover:opacity-80" fill="#10B981" height="130" rx="3" width="22" x="25" y="65"></rect>
+<rect class="transition-all hover:opacity-80" fill="#F43F5E" height="70" rx="3" width="22" x="52" y="125"></rect>
+<!-- Jun: Income 2900, Expense 1650 -->
+<rect class="transition-all hover:opacity-80" fill="#10B981" height="145" rx="3" width="22" x="115" y="50"></rect>
+<rect class="transition-all hover:opacity-80" fill="#F43F5E" height="83" rx="3" width="22" x="142" y="112"></rect>
+<!-- Jul: Income 3100, Expense 1300 -->
+<rect class="transition-all hover:opacity-80" fill="#10B981" height="155" rx="3" width="22" x="205" y="40"></rect>
+<rect class="transition-all hover:opacity-80" fill="#F43F5E" height="65" rx="3" width="22" x="232" y="130"></rect>
+<!-- Ago: Income 2800, Expense 1800 -->
+<rect class="transition-all hover:opacity-80" fill="#10B981" height="140" rx="3" width="22" x="295" y="55"></rect>
+<rect class="transition-all hover:opacity-80" fill="#F43F5E" height="90" rx="3" width="22" x="322" y="105"></rect>
+<!-- Sep: Income 3250, Expense 1350 -->
+<rect class="transition-all hover:opacity-80" fill="#10B981" height="163" rx="3" width="22" x="385" y="32"></rect>
+<rect class="transition-all hover:opacity-80" fill="#F43F5E" height="67" rx="3" width="22" x="412" y="128"></rect>
+<!-- Oct: Income 3450, Expense 1210 -->
+<rect class="transition-all hover:opacity-80" fill="#10B981" height="173" rx="3" width="22" x="475" y="22"></rect>
+<rect class="transition-all hover:opacity-80" fill="#F43F5E" height="61" rx="3" width="22" x="502" y="134"></rect>
+<!-- Labels -->
+<text fill="#8d90a0" font-family="Inter" font-size="11" text-anchor="middle" x="49" y="215">May</text>
+<text fill="#8d90a0" font-family="Inter" font-size="11" text-anchor="middle" x="139" y="215">Jun</text>
+<text fill="#8d90a0" font-family="Inter" font-size="11" text-anchor="middle" x="229" y="215">Jul</text>
+<text fill="#8d90a0" font-family="Inter" font-size="11" text-anchor="middle" x="319" y="215">Ago</text>
+<text fill="#8d90a0" font-family="Inter" font-size="11" text-anchor="middle" x="409" y="215">Sep</text>
+<text fill="#b4c5ff" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="499" y="215">Oct</text>
+</svg>
+</div>
+<!-- Trend indicator footer -->
+<div class="flex items-center justify-between pt-space-md mt-space-md border-t border-border-subtle/50 text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-income-emerald">insights</span>
+<span>Mayor superávit registrado en los últimos 4 meses (+64.9%)</span>
+</span>
+<span class="font-metric-md text-label-sm text-outline">Actualizado hoy, 18:30</span>
+</div>
+</div>
+<!-- Right Card: Metas Activas (5 of 12 cols ~= 40%) -->
+<div class="lg:col-span-5 bg-surface-card rounded-xl p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Metas Activas</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Progreso del plan de reserva y proyectos</p>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1" title="Gestionar metas" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+<div class="space-y-space-md mt-space-sm">
+<!-- Goal 1: Fondo de Emergencia -->
+<div class="p-space-md rounded-xl bg-surface-interactive/60 hover:bg-surface-interactive transition-colors">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">shield</span>
+</div>
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface">Fondo de Emergencia</h3>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Objetivo: 6 meses de costos fijos</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-metric-md text-label-sm font-bold">75%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 bg-surface-card rounded-full overflow-hidden my-space-xs">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500" style="width: 75%;"></div>
+</div>
+<div class="flex items-center justify-between font-metric-md text-label-sm pt-space-xs">
+<span class="text-on-surface font-semibold">$7,500.00 <span class="text-on-surface-variant font-normal">/ $10,000.00</span></span>
+<span class="text-outline">Faltan $2,500</span>
+</div>
+</div>
+<!-- Goal 2: Vacaciones -->
+<div class="p-space-md rounded-xl bg-surface-interactive/60 hover:bg-surface-interactive transition-colors">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-warning-amber/15 text-warning-amber flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">flight_takeoff</span>
+</div>
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface">Vacaciones Familiares</h3>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Destino: Patagonia Dic 2024</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-warning-amber/20 text-warning-amber font-metric-md text-label-sm font-bold">40%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 bg-surface-card rounded-full overflow-hidden my-space-xs">
+<div class="h-full bg-warning-amber rounded-full transition-all duration-500" style="width: 40%;"></div>
+</div>
+<div class="flex items-center justify-between font-metric-md text-label-sm pt-space-xs">
+<span class="text-on-surface font-semibold">$800.00 <span class="text-on-surface-variant font-normal">/ $2,000.00</span></span>
+<span class="text-outline">Faltan $1,200</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Card Link -->
+<button class="w-full mt-space-md py-2.5 px-space-md rounded-lg bg-surface-container hover:bg-surface-interactive text-on-surface text-body-sm font-body-sm flex items-center justify-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-outline">add_circle</span>
+<span>Establecer nueva meta financiera</span>
+</button>
+</div>
+</div>
+<!-- Row 3: Bottom Row - Recent Transactions -->
+<div class="bg-surface-card rounded-xl p-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md mb-space-sm border-b border-border-subtle">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Últimos Movimientos</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Transacciones registradas durante la semana en curso</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed text-body-sm font-body-sm font-medium transition-colors" href="#">
+<span>Ver todas</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Data Table / List -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="font-label-sm text-label-sm uppercase tracking-wider text-outline border-b border-border-subtle/70">
+<th class="py-space-sm px-space-sm font-medium">Fecha</th>
+<th class="py-space-sm px-space-sm font-medium">Concepto / Descripción</th>
+<th class="py-space-sm px-space-sm font-medium">Categoría</th>
+<th class="py-space-sm px-space-sm font-medium">Método de Pago</th>
+<th class="py-space-sm px-space-sm font-medium text-right">Monto</th>
+<th class="py-space-sm px-space-xs font-medium text-right"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle/50">
+<!-- Row 1: Salario -->
+<tr class="hover:bg-surface-interactive/60 transition-colors group">
+<td class="py-space-md px-space-sm font-metric-md text-label-md text-outline whitespace-nowrap">
+              24 Oct 2024
+            </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-income-emerald/10 text-income-emerald flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">payments</span>
+</div>
+<div class="min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate block">Pago de Nómina Quincenal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">ID Ref: NOM-2024-9842</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-md bg-secondary-container text-on-primary-container">
+                Salario
+              </span>
+</td>
+<td class="py-space-md px-space-sm font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-outline">account_balance</span>
+<span>Transferencia Bancaria</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right whitespace-nowrap">
+<span class="font-metric-lg text-metric-md text-income-emerald font-bold">+$2,100.00</span>
+</td>
+<td class="py-space-md px-space-xs text-right whitespace-nowrap">
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded transition-colors opacity-0 group-hover:opacity-100" title="Ver comprobante" type="button">
+<span class="material-symbols-outlined text-base">receipt</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Supermercado -->
+<tr class="hover:bg-surface-interactive/60 transition-colors group">
+<td class="py-space-md px-space-sm font-metric-md text-label-md text-outline whitespace-nowrap">
+              22 Oct 2024
+            </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-warning-amber/10 text-warning-amber flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+</div>
+<div class="min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate block">Supermercado & Víveres</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Compra semanal comestibles</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-md bg-warning-amber/15 text-warning-amber">
+                Alimentación
+              </span>
+</td>
+<td class="py-space-md px-space-sm font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-outline">credit_card</span>
+<span>Tarjeta de Débito</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right whitespace-nowrap">
+<span class="font-metric-lg text-metric-md text-expense-rose font-bold">-$145.20</span>
+</td>
+<td class="py-space-md px-space-xs text-right whitespace-nowrap">
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded transition-colors opacity-0 group-hover:opacity-100" title="Ver comprobante" type="button">
+<span class="material-symbols-outlined text-base">receipt</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Servicios -->
+<tr class="hover:bg-surface-interactive/60 transition-colors group">
+<td class="py-space-md px-space-sm font-metric-md text-label-md text-outline whitespace-nowrap">
+              19 Oct 2024
+            </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">router</span>
+</div>
+<div class="min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate block">Servicios: Internet Fibra Óptica</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Plan 600 Mbps Dedicado</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-md bg-surface-container-highest text-primary">
+                Servicios
+              </span>
+</td>
+<td class="py-space-md px-space-sm font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-outline">autorenew</span>
+<span>Pago Automático</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right whitespace-nowrap">
+<span class="font-metric-lg text-metric-md text-expense-rose font-bold">-$65.00</span>
+</td>
+<td class="py-space-md px-space-xs text-right whitespace-nowrap">
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded transition-colors opacity-0 group-hover:opacity-100" title="Ver comprobante" type="button">
+<span class="material-symbols-outlined text-base">receipt</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Summary / Micro-footer -->
+<div class="flex items-center justify-between pt-space-md mt-space-sm text-label-sm font-label-sm text-outline">
+<span>Mostrando 3 de 48 movimientos este mes</span>
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-income-emerald font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-income-emerald"></span> Conciliación bancaria al 100%
+        </span>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
